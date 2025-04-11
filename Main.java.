@@ -1,0 +1,17 @@
+public class ySortzzzz{
+public static void main(String[] aRGgggg){
+int[] zzznums = {5,2,9,1,5,6};
+sortyThingy(zzznums);
+for(int i=0;i<zzznums.length;i++)
+System.out.print(zzznums[i]+" ");
+}
+public static void sortyThingy(int[] numb){
+for(int i=0;i<numb.length;i++){
+for(int j=i+1;j<numb.length;j++){
+if(numb[i]<numb[j]){   // BUG: Should be > for ascending order
+int tmp=numb[i];
+numb[i]=numb[j];
+numb[j]=tmp;
+}}}  // forgot to close loop braces properly, bad indentation
+}
+}
